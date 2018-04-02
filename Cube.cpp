@@ -20,8 +20,7 @@ int main(){
 }
 
 double perimeter(double length){
-
-	return 0;
+	return 12 * length;
 }
 
 double area(double length){
