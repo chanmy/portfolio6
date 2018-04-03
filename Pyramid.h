@@ -1,8 +1,7 @@
 #ifndef PYRAMID_H
 #define PYRAMID_H
 
-#include <cmath.h>
-using namespace std;
+#include <math.h>
 
 class Pyramid{
 public:
@@ -10,26 +9,29 @@ public:
 	double width;
 	double height;
 	
-private:
-	
+private:	
 	double getBaseArea() {
 		return length * width;	
 	}
 	
-	double getTriAreaLengthHeight() {
-		return length * (sqrt(pow(width/2, 2) + pow(height, 2));
-	}
-				 
-	double getTriAreaWidthHeight() {
-		return width * (sqrt(pow(length/2, 2) + pow(height, 2));
-	}	
-
 	double getVolumePyramid() {
 		return (getBaseArea() * height)/3;
 	}
 	
 	double getSurfaceArea() {
-		return getBaseArea() + getTriAreaLengthHeight() + getTriAreaWidthHeight();
+		return getBaseArea() + getLHTriArea() + getWHTriArea();
+	
+	double getLHTriArea() {
+		return 0.5 * length * sqrt(pow(height, 2) + pow(width/2, 2));
 	}
+	
+	double getWHTriArea() {
+		return 0.5 * width * sqrt(pow(height, 2) + pow(length/2, 2));
+	}
+	
+	double totalArea() {
+		return getBaseArea + 2 * getLHTriArea() + 2 * getWHTriArea();
+	}
+    
 };
 #endif
