@@ -9,7 +9,15 @@ public:
 	double width;
 	double height;
 	
-private:	
+private:
+	Pyramid(){}
+	
+	Pyramid(double l, double w, double h){
+		length = l;
+		width = w;
+		height = h;
+	}
+	
 	double getBaseArea() {
 		return length * width;	
 	}
