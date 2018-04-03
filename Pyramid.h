@@ -4,12 +4,12 @@
 #include <math.h>
 
 class Pyramid{
-public:
+private:
 	double length;
 	double width;
 	double height;
 	
-private:
+public:
 	Pyramid(){}
 	
 	Pyramid(double l, double w, double h){
