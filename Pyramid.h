@@ -20,6 +20,7 @@ private:
 	
 	double getSurfaceArea() {
 		return getBaseArea() + getLHTriArea() + getWHTriArea();
+	}
 	
 	double getLHTriArea() {
 		return 0.5 * length * sqrt(pow(height, 2) + pow(width/2, 2));
