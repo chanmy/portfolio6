@@ -4,52 +4,26 @@
 #include <math.h>
 
 class Sphere{
-private:
-	double radius;
-	
 public:
-	Sphere(){
-		radius = 0;
+	double radius;
+	Sphere() {
+		radius = 1;
 	}
-	
-	Sphere(double r){
+	Sphere(double r) {
 		radius = r;	
 	}
-	
+private:
 	double setRadius(double r) {
 		radius = r;
 	}
-	
-	double getFullArea(){
-		return 4.0 * 22 / 7 * pow(radius, 2);	
+	double getSurfaceArea() {
+		return 4 * 3.142 * pow(radius, 2);
 	}
-	
-	double halfArea(){
-		return 4.0 * 22 / 7 * pow(radius, 2) / 2;	
+	double getDiameterRadius() {
+		return 2 * radius;	
 	}
-	
-	double quarterArea(){
-		return 4.0 * 22 / 7 * pow(radius, 2) / 4;	
-	}
-	
-	double eighthArea(){
-		return 4.0 * 22 / 7 * pow(radius, 2) / 8;	
-	}
-	
-	double getFullVolume(){
-		return 4.0 / 3 * 22 / 7 * pow(radius, 3);	
-	}
-	
-	double halfVolume(){
-		return 4.0 / 3 * 22 / 7 * pow(radius, 3) / 2;	
-	}
-	
-	double quarterVolume(){
-		return 4.0 / 3 * 22 / 7 * pow(radius, 3) / 4;	
-	}
-	
-	double eighthVolume(){
-		return 4.0 / 3 * 22 / 7 * pow(radius, 3) / 8;
+	double getVolumeSphere() {
+		return (4/3) * 3.142 * pow(radius, 3);	
 	}
 };
 #endif
