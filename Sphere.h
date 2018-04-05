@@ -22,5 +22,9 @@ private:
 	double getVolumeSphere() {
 		return (4/3) * 3.142 * pow(radius, 3);	
 	}
+	
+	double test() {
+		
+	}
 };
 #endif
