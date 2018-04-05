@@ -8,10 +8,6 @@ private:
 	double radius;
 	
 public:
-	Sphere(){
-		radius = 0;
-	}
-	
 	Sphere(double r){
 		radius = r;	
 	}
