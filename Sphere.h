@@ -6,7 +6,6 @@
 class Sphere{
 private:
 	double radius;
-	
 public:
 	Sphere(double r){
 		radius = r;	
