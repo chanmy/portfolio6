@@ -43,6 +43,9 @@ public:
 	double quarterVolume(){
 		return 4.0 / 3 * 22 / 7 * pow(radius, 3) / 4;	
 	}
-
+	
+	double eighthVolume(){
+		return 4.0 / 3 * 22 / 7 * pow(radius, 3) / 8;
+	}
 };
 #endif
