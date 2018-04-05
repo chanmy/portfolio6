@@ -8,6 +8,7 @@ public:
 	Sphere(double r){
 		radius = r;	
 	}
+	
 private:
 	double setRadius(double r) {
 		radius = r;
